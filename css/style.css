@@ -137,9 +137,12 @@ footer {
     transition: transform 0.1s, box-shadow 0.1s;
     box-shadow: 0 2px 8px rgba(26,35,126,0.10);
 }
-.resume { background: #1a237e; }
-.projects { background: #e53935; }
-.contact { background: #26c6da; color: #222; }
+.main-btn.resume { background-color: #4a90e2; }
+.main-btn.projects { background-color: #50e3c2; }
+.main-btn.contact { background-color: #f5a623; }
+.main-btn.blog { background-color: #b8e986; }
+.main-btn.gallery { background-color: #bd10e0; }
+
 .main-btn:hover {
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0 6px 24px rgba(26,35,126,0.18);
