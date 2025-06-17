@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Puzzle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/waterpuzzle.css">
+</head>
+<body class="water-game">
+    <header class="center-header">
+        <span class="role">Editor</span>
+        <nav>
+            <a href="index.html">個人介紹</a>
+            <a href="works.html">作業</a>
+            <a href="contact.html">聯絡我</a>
+        </nav>
+    </header>
+    <h1>2025 Water Puzzle Game</h1>
+    <div id="game-info" class="game-area">
+        <p>關卡：<span id=level-count>1</span></p>
+        <p>完成的試管：<span id="completed-tubes-count">0</span></p>
+    </div>
+    <div id="controls" class="game-area">
+        <label for="level-select">選擇關卡</label>
+        <select id="level-select">
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+            <option value="4">Level 4</option>
+            <option value="5">Level 5</option>
+            <option value="6">Level 6</option>
+            <option value="7">Level 7</option>
+            <option value="8">Level 8</option>
+            <option value="9">Level 9</option>
+            <option value="10">Level 10</option>
+        </select>
+        <button id ="play-button">PLAY</button>
+    </div>
+    <div id="game-container" class="game-area">
+    </div>
+    <script src="js/water.js"></script>
+    <footer class="site-footer">
+        <div>
+            <strong>Phone</strong><br>123-456-7890
+        </div>
+        <div>
+            <strong>Email</strong><br>info@email.com
+        </div>
+        <div>
+            <strong>Follow Me</strong><br>
+            <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+        </div>
+        <div>
+            &copy; 2025 你的名字
+        </div>
+    </footer>
+</body>
+</html>

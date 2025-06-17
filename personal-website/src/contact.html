@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">你的名字 <span class="role">Editor</span></div>
+        <nav>
+            <a href="index.html">個人介紹</a>
+            <a href="works.html">作業</a>
+            <a href="contact.html" class="active">聯絡我</a>
+        </nav>
+    </header>
+    <main class="contact-main">
+        <div class="contact-info">
+            <h1>Contact</h1>
+            <p>Looking forward to hearing from you</p>
+            <div class="contact-block">
+                <strong>Phone</strong>
+                <div>123-456-7890</div>
+            </div>
+            <div class="contact-block">
+                <strong>Email</strong>
+                <div>info@mysite.com</div>
+            </div>
+        </div>
+        <form class="contact-form">
+            <div class="form-row">
+                <div>
+                    <label>First Name *</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Last Name *</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+                <div>
+                    <label>Subject</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

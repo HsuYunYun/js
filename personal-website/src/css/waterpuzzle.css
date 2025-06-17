@@ -1,0 +1,114 @@
+/* Water Puzzle Game 專用樣式 */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.game-area {
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+}
+
+#game-info {
+    background-color: rgb(178, 217, 250);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#controls {
+    background-color: rgb(154, 189, 218);
+}
+
+#game-container {
+    background-color: rgb(162, 209, 252);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tube {
+    width: 50px;
+    height: 200px;
+    border: 2px solid black;
+    border-top: 0px;
+    border-radius: 0 0 10px 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.water {
+    width: 100%;
+}
+
+.tube.selected {
+    border-color: red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    transform: translateY(-20px);
+}
+
+/* header 樣式複製自 style.css */
+.center-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(26,35,126,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 48px;
+    gap: 24px;
+    box-sizing: border-box;
+}
+.center-header .role {
+    color: #888;
+    font-size: 2.2em;
+    font-weight: 500;
+    margin: 0;
+}
+.center-header nav {
+    display: flex;
+    gap: 48px;
+}
+.center-header nav a {
+    color: #1a237e;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 18px;
+    border-right: 1px solid #ccc;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+.center-header nav a:last-child {
+    border-right: none;
+}
+@media (max-width: 700px) {
+    .center-header {
+        width: 98vw;
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px 0;
+    }
+    .center-header nav {
+        gap: 16px;
+    }
+}
+@media (max-width: 900px) {
+    .center-header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 24px 8px;
+        gap: 16px;
+    }
+    .center-header nav {
+        justify-content: space-between;
+        gap: 16px;
+    }
+}

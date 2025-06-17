@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript作業</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        div#myId {
+            width: 90%;
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        table, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            text-align:center;
+            margin: 0 auto;
+        }
+        td{
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var n = document.getElementById('numberInput').value;
+            // alert("輸入的數值是: " + n);
+
+            var str="<table>";
+
+            for (let i = 1; i <= n; i++) {
+                str+="<tr>";
+                for (let j = 1; j <= n; j++) {
+                    str+=`<td> ${i} * ${j} = ${i*j}</td>`;
+                }
+                str+="</tr>";
+            }
+            str+="</table>";
+
+            document.getElementById("myId").innerHTML = str;
+        }
+    </script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">你的名字 <span class="role">Editor</span></div>
+        <nav>
+            <a href="index.html">個人介紹</a>
+            <a href="works.html">作業</a>
+            <a href="contact.html">聯絡我</a>
+        </nav>
+    </header>
+    <h1>N*N乘法表</h1>
+    <label for="numberInput">輸入一個數值:</label>
+    <input type="number" id="numberInput" placeholder="輸入一個數值" />
+    <input type="button" value="OK" title="OK" onclick="myFunction()" />
+    <div id="myId"></div>
+    <footer class="site-footer">
+        <div>
+            <strong>Phone</strong><br>123-456-7890
+        </div>
+        <div>
+            <strong>Email</strong><br>info@email.com
+        </div>
+        <div>
+            <strong>Follow Me</strong><br>
+            <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+        </div>
+        <div>
+            &copy; 2025 你的名字
+        </div>
+    </footer>
+</body>
+
+</html>
